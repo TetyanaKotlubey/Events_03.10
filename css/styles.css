@@ -11,9 +11,13 @@ body
 }
 .container
 {
+    padding: 15px 0;
     max-width: 1170px;
-    padding: 15px;
     margin: 0 auto;
+}
+a
+{
+    text-decoration: none;
 }
 .box
 {
@@ -35,4 +39,70 @@ body
 .box--bg-gradient
 {
     background-image: linear-gradient(to bottom, #333399 0%, #333399 40%,  #fe00cc 100%);
+}
+h1, h2
+{
+    font-size: 60px;
+}
+h3
+{
+    font-size: 36px;
+}
+h4
+{
+    font-size: 30px;
+}
+h5
+{
+    font-size: 24px;
+}
+header
+{
+    color: #fff;
+    background-color:  orange;
+}
+header a
+{
+    color: inherit;
+}
+.logo
+{
+    font-weight: 700;
+    font-size: 33px;
+}
+.logo:hover, 
+.logo:active,
+.logo:focus
+{
+    color: #e71cb4;
+}
+nav ul
+{
+    list-style-type: none;
+    padding: 0; 
+}
+nav ul li
+{
+    display: inline-block;
+    margin-left: 25px;
+}
+nav ul li a
+
+{
+    padding: 5px;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus
+{
+    color: #e71cb4;
+    border-bottom-color: #e71cb4;
+}
+header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
