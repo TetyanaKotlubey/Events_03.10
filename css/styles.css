@@ -10,6 +10,13 @@ body
     color: #444;
     line-height: 1.6;
 }
+@media screen and (max-width: 768px)
+{
+    body 
+    {
+        font-size: 16px;
+    }
+}
 .container
 {
     padding: 0 15px;
@@ -149,11 +156,21 @@ header .container
     display: inline-block;
     font-size: 16px;
 }
+
 .btn--lg
 {
     font-size: 22px;
     padding: 20px 80px;
 }
+@media screen and (max-width: 576px)
+{
+    .btn--lg
+    {
+        font-size: 16px;
+        padding: 15px 45px;
+    }
+}
+
 .btn:hover,
 .btn:focus,
 .btn:active
@@ -198,6 +215,14 @@ color: #ffde16;
     font-size: 32px;
     margin: 90px 0;
 }
+@media screen and (max-width: 768px)
+{
+    .text-lg
+    {
+        font-size: 24px;
+        margin: 50px 0;
+    }
+}
 .text-sm{
     font-size: 14px;
     margin: 45px 0;
@@ -213,9 +238,23 @@ color: #ffde16;
     column-count: 2;
     column-gap: 30px;
 }
+@media screen and (max-width: 960px)
+{
+    .course
+    {
+        column-count: 1;
+    }
+}
 .course li{
     display: flex;
     padding: 25px 0;
+}
+@media screen and (max-width: 576px)
+{
+    .course li 
+    {
+        flex-direction: column;
+    }
 }
 .course__index{
     font-size: 44px;
@@ -224,6 +263,14 @@ color: #ffde16;
     margin: 0 25px;
     line-height: 1.2;
     flex: 0 0 auto;
+}
+@media screen and (max-width: 576px)
+{
+    .course__index
+    {
+        font-size: 32px;
+        margin: 0;
+    }
 }
 .course__index > i{
     margin-right: 25px;/*увеличили растояние между цифрой и >*/
@@ -237,10 +284,33 @@ color: #ffde16;
      flex-wrap: wrap;
      justify-content: space-between;
 }
-.person{
+@media screen and (max-width: 960px)
+{
+    .people
+    {
+       justify-content: space-around;
+    }
+}
+
+.person
+{
 padding: 20px 60px;
 text-align: center;
-max-width: 30%;/*для 3 картинок*/
+width: 33%;/*для 3 картинок*/
+}
+@media screen and (max-width: 960px)
+{
+    .person
+    {
+       width: 50%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .person
+    {
+       width: 80%;
+    }
 }
 .person--padding-sm{
     padding: 20px;
@@ -306,6 +376,61 @@ cursor: pointer;
 .countdown__text{
     text-transform: uppercase;
     font-weight: 300;
+}
+@media screen and (max-width: 960px)
+{
+    .countdown__item
+    {
+        min-width: 120px;
+        min-height: 120px;
+        padding: 10px 20px 20px ;
+        margin: 0 20px;
+    }
+    .countdown__num
+    {
+        font-size: 50px;
+    }
+    .countdown__text
+    {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .countdown__item
+    {
+        min-width: 160px;
+        min-height: 160px;
+        padding: 15px 30px 20px 30px;
+        margin: 15px 35px;
+    }
+    .countdown__num
+    {
+        font-size: 70px;
+    }
+    .countdown__text
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    h2 
+    {
+        font-size: 42px;
+    }
+    h3
+    {
+        font-size: 28px;
+    }
+    h4
+    {
+        font-size: 24px;
+    }
+    h5
+    {
+        font-size: 18px;
+    }
 }
 .sponsors{
     list-style: none;
